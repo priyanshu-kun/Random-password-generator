@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="fontawesome.min.css">
+    <title>Random Password Generator</title>
+</head>
+
+<body>
+    <header>
+        <h1>Random Password - Generator</h1>
+    </header>
+    <section class="wrapper">
+        <div class="card">
+            <h1>Password Generator</h1>
+            <div class="screenandcopy">
+                <input type="text" id="copy" placeholder="Your password">
+                <span><i class="fas fa-copy"></i></span>
+            </div>
+            <i class="fas fa-sort-numeric-up-alt number-range"></i>
+            <label class="rangeLabel" for="range">Select Password length range</label>
+            <input type="range" id="range_" min="6" max="24" value="8">
+            <span class="length">8</span>
+            <div class="uppercase">
+                <label for="uppercase">Include Uppercase letter</label>
+                <!-- <input type="checkbox" name="check" id="uppercase"> -->
+                <div id="upper" class="toggle">
+                    <div class="innercircle"></div>
+                </div>
+            </div>
+            <div class="lowercase">
+                <label for="Lowercase">Include Lowercase letter</label>
+                <!-- <input type="checkbox" name="check" id="Lowercase"> -->
+                <div id="lower" class="toggle">
+                    <div class="innercircle"></div>
+                </div>
+            </div>
+            <div class="num">
+                <label for="Number">Include Number</label>
+                <!-- <input type="checkbox" name="check" id="Number"> -->
+                <div id="num" class="toggle">
+                    <div class="innercircle"></div>
+                </div>
+            </div>
+            <div class="symbols">
+                <label for="Symbols">Include Symbols</label>
+                <!-- <input type="checkbox" name="check" id="Symbols"> -->
+                <div id="symbols" class="toggle">
+                    <div class="innercircle"></div>
+                </div>
+            </div>
+            <button class="btn">Generate Password</button>
+        </div>
+
+    </section>
+
+    <script src="brain.js"></script>
+</body>
+
+</html>
